@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
+/* Page Resets */
+
 *,
 *::after,
 *::before {
@@ -8,34 +10,108 @@
   box-sizing: border-box;
 }
 
+/* Landing Page Colour Scheme */
+
+:root {
+  --hero-bg: #1f2937;
+  --footer-bg: #1f2937;
+  --hero-main-text: #f9faf8;
+  --hero-secondary-text: #e5e7eb;
+  --header-logo-text: #f9faf8;
+  --cta-btn: #3882f6;
+  --info-header-text: #1f2937;
+  --quote-section: #e5e7eb;
+  --quote-text: #1f2937;
+}
+
 body {
   display: flex;
   flex-direction: column;
   font-family: roboto;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #1f2937;
-  padding: 16px 32px;
-  color: #f9faf8;
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
 }
 
-header ul {
+.header__container {
+  background-color: var(--hero-bg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  color: var(--header-logo-text);
+}
+
+.hero__container {
+  background-color: var(--hero-bg);
+}
+
+.header .logo {
+  font-weight: 700;
+}
+
+.header ul {
   list-style: none;
   display: flex;
-  gap: 16px;
+  gap: 42px;
 }
 
-section.header {
+.header ul li a {
+  text-decoration: none;
+  color: var(--header-logo-text);
+}
+
+/* HERO SECTION */
+
+.hero {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 16px;
-  padding: 16px 32px;
+  padding: 100px 0px;
+  background-color: #1f2937;
 }
 
-section.header.left,
-section.header.right {
-  flex: 0;
+.hero .col-left {
+  flex: 1 1 48%;
+}
+
+.hero .col-right {
+  flex: 1 1 48%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  color: var(--hero-main-text);
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.hero .subtext {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--hero-secondary-text);
+  margin-bottom: 12px;
+}
+
+.hero button {
+  background-color: var(--cta-btn);
+  display: block;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--hero-main-text);
+}
+
+.hero img {
+  width: 70%;
 }
