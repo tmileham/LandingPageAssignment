@@ -1,6 +1,6 @@
 ## About The Project
 
-This is my landing page assignment from TheOdinProject's HTML/CSS course
+This is my landing page assignment for the TheOdinProject's HTML/CSS course
 
 ### Built With
 
