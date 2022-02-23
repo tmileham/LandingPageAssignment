@@ -81,7 +81,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 100px 0px;
+  padding: 85px 0px;
   background-color: #1f2937;
 }
 
@@ -115,7 +115,6 @@ body {
   border: none;
   border-radius: 8px;
   padding: 8px 12px;
-
   font-size: 16px;
   font-weight: 600;
   color: var(--hero-main-text);
@@ -156,6 +155,7 @@ body {
   height: 180px;
   margin: 0 auto;
   width: 180px;
+  background: url(images/img_placeholder.png);
 }
 
 .info-box .item-text {
@@ -195,6 +195,61 @@ body {
 }
 
 /* CTA Section */
-
+.CTAsection__container {
+  padding: 70px 32px;
+}
 .CTAsection {
+  background-color: var(--cta-btn);
+  padding: 50px;
+  border-radius: 8px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  color: var(--header-logo-text);
+}
+
+.CTAsection-left {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.CTAsection-left h3 {
+  font-size: 24px;
+}
+
+.CTAsection-left p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.CTAsection-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CTAsection-right button {
+  background: none;
+  display: block;
+  color: var(--hero-main-text);
+  border: 2px solid var(--hero-main-text);
+  border-radius: 8px;
+  padding: 8px 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer__container {
+  background-color: var(--hero-bg);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0px;
+  font-weight: 300;
+  color: var(--header-logo-text);
 }
